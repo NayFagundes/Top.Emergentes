@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>O Mistério da Ligação</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* centraliza horizontal */
+      align-items: center;     /* centraliza vertical */
+      height: 100vh;           /* altura total da tela */
+      margin: 0;               /* remove margens padrão */
+      background-color: #111;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      border: 2px solid #f26522;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      background-color: #222;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #f26522;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/ghost.png" alt="ícone do bot" />
+    <h2>Bot: O Mistério da Ligação</h2>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="BotMedo"
+      agent-id="e3b5b58f-d088-43db-a4cc-d550d8399e27"
+      language-code="pt-br"
+    ></df-messenger>
+  </div>
+</body>
+</html>
